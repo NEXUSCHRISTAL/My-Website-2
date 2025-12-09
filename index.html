@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kaizer's Website</title>
+  <link rel="icon" type="image/png" href="/images/20250318_144514~2.jpg">
+  <link rel="stylesheet" href="sm.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <!-- <li><a href="#about-me">About Me</a></li> -->
+            <li><a href="/codedProjects.html">Coded Projects</a></li>
+            <li><a href="/artworkProjects.html">My Artworks</a></li>
+            <!-- 3d pieces soon to come... -->
+            <li><a href="/blog.html">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1 class="heading1">Nexus Christal</h1>
+        <p>Creative | Developer | Dreamer</p>
+        <!-- writing animation for this one -->
+        <img src="/images/20250318_144514~2.jpg" alt="a painting of my face" class="profile-image">
+    </header>
+    <main>
+        <section id="about-me">
+            <h2>About Me</h2>
+            <p>Hi, I'm Kaizer, a creative developer passionate about crafting innovative, user-friendly web applications. I enjoy blending logic and design to build digital experiences that are both functional and beautiful. Beyond coding, i'm also an aspiring artist, always exploring new styles and ways to express my creativity.</p>
+            <p>Feel free to explore my projects and artworks showcased here. I'm always eager to connect with fellow developers, artists, and anyone interested in technology and creativity. Let's create something amazing together!</p>
+        </section>
+    
+        <section id="codes">
+            <h2>Coded Project</h2>
+            <div class="card project-card">
+                <div class="card-main">
+                    <img src="images/Screenshot 2025-09-12 191413.png" alt="image of the web application">
+                    <div class="card-text">
+                        <h3>Weather Outfit App</h3>
+                        <p>This app recommends outfits based on the weather. When a user types in their city, it fetches real-time weather data from the OpenWeather API and generates an outfit recommendation suitable for those conditions. I am currently working on adding auto-detection for the user's location.</p>
+                        <p><strong>Technologies used:</strong> HTML, CSS, JavaScript, OpenWeather API</p>
+                    </div>
+                </div>
+                <div class="card-links">
+                    <a href="https://nexuschristal.github.io/Weather-Outfit--v2./" target="_blank">View Live</a>
+                    <a href="https://github.com/NEXUSCHRISTAL/Weather-Outfit--v2..git" target="_blank">Source Code</a>
+                    <button id="view-more1" onclick="viewMore1()">More Projects</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="artwork">
+            <h2>My Artwork</h2>
+            <div class="card artwork-card">
+                <div class="card-main">
+                    <img src="/images/Snapchat-661001634~2.jpg" alt="a painting of my face"/>
+                    <div class="card-text">
+                        <h3>Painting</h3>
+                        <p>This painting was part of my final project piece for my college work. This has been one of my least favorites to paint but for some reason, it has been the first to be sold.</p>
+                    </div>
+                </div>
+                <div class="card-links">
+                    <button id="view-more2" onclick="viewMore2()">More Artworks</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="card-text">
+        <p>Email: <a href="mailto:kaizerdanielokafor2005@gmail.com">kaizerdanielokafor2005@gmail.com</a></p>
+        <p>Phone: <a href="tel:+447907477413">+44 790 7477 413</a></p>
+        </div>
+        <form action="https://formspree.io/f/xqadnewr" method="post">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit" target="_blank">Send Message</button>
+      </form>
+    </section>
+
+<div class="rolling-shape"></div>
+
+    <footer>
+        <p>© Kaizer 2025. 🧸 vs.1.2</p>
+     </footer>
+
+    <script src="sm.js"></script>
+</body>
+</html>

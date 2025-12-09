@@ -1,0 +1,525 @@
+:root {
+    --background: #1a1a1a;
+    --primaryColor: #00eeff;
+    --secondaryColor: #ff5f15;
+    --textColor: #ebebeb;
+    --cardBackground: #3d0202;
+    --red-shadow: #ff0000b0;
+    --blue-shadow: #0606ea80;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--textColor);
+    background-image: url("/images/20250201_161330~2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+nav {
+    background-color: var(--cardBackground);
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav ul li a {
+    color: var(--textColor);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    color: var(--secondaryColor);
+    transform: scale(1.1);
+}
+
+header {
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.heading1 {
+    font-size: 7rem;
+    margin-bottom: 0.2rem;
+    color: var(--primaryColor);
+}
+
+header p {
+    font-size: 1.9rem;
+    font-style: italic;
+    color: var(--secondaryColor);
+}
+
+.profile-image {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    margin: 1rem;
+    border: 5px solid var(--secondaryColor);
+    box-shadow: 0 0 20px var(--secondaryColor);
+}
+
+main {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+
+section {
+    background-color: var(--cardBackground);
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 1.25rem;
+}
+
+h2 {
+    font-size: 3rem;
+    color: var(--secondaryColor);
+    text-align: center;
+    margin: 1rem;
+    font-weight: bold;
+}
+
+.card-main {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.card-main img {
+    flex: 0 0 40%;
+    width: 50%;
+    border-radius: 5px;
+}
+
+.card-text {
+    flex: 1;
+    border: solid 1px var(--secondaryColor);
+    color: var(--textColor);
+    padding: 1rem;
+    border-radius: 5px;
+    
+}
+
+.card-text h3 {
+    font-size: 2rem;
+    color: var(--primaryColor);
+    margin-bottom: 1rem;
+}
+
+.card-text p {
+    font-size: 1.25rem;
+    color: var(--textColor);
+    margin-bottom: 1rem;
+}
+
+.card-links {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;;
+    align-items: center;
+}
+
+.card-links a {
+    color: var(--primaryColor);
+    text-decoration: none;
+    margin-right: 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    border: solid 1px var(--primaryColor);
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.card-links a:hover {
+    text-decoration: underline;
+}
+
+.card-links button {
+    background-color: var(--secondaryColor);
+    color: var(--background);
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    margin-left: auto;
+}
+
+.card-links button:hover {
+    background-color: var(--primaryColor);
+}
+
+#contact {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#contact a {
+    color: var(--primaryColor);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+#contact input,
+#contact textarea {
+    padding: 0.8rem;
+    border: 1px solid var(--secondaryColor);
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+#contact button {
+    background-color: var(--secondaryColor);
+    color: var(--background);
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+#contact button:hover {
+    background-color: var(--primaryColor);
+}
+
+footer {
+    text-align: center;
+    padding: 2px;
+    background-color: var(--cardBackground);
+    margin-top: 2rem;
+}
+
+
+/* codedProject.html */
+
+#codedProjects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#codedProjects div {
+    background-color: var(--cardBackground);
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#codedProjects img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#codedProjects h3 {
+    font-size: 1.5rem;
+    color: var(--primaryColor);
+    margin-bottom: 1rem;
+}
+
+#codedProjects p {
+    font-size: 1rem;
+    color: var(--textColor);
+    margin-bottom: 1rem;
+}
+
+#codedProjects a {
+    color: var(--primaryColor);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    border: solid 1px var(--primaryColor);
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+#codedProjects a:hover {
+    text-decoration: underline;
+}
+
+
+/* artworkProjects.html */
+
+#artworks-body {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   /* i really want it to be 3 */
+   grid-gap: 1rem;
+   margin-top: 2rem;
+}
+
+#artworkProjects .artwork-container {
+    background-color: var(--cardBackground);
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 10px;
+}
+
+#artworkProjects .artwork-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#artworkProjects .artwork-container h3 {
+    font-size: 1.5rem;
+    color: var(--primaryColor);
+    margin-bottom: 1rem;
+}
+
+#artworkProjects .artwork-container p {
+    font-size: 1rem;
+    color: var(--textColor);
+    margin-bottom: 1rem;
+}
+
+abbr {
+    text-decoration: none;
+}
+
+/* Fullscreen Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 5000;
+    padding-top: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.95);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    color: var(--textColor);
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+
+/* blog.html */
+
+#blog {
+    width: 100%;
+    max-width: 900px;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 3rem;
+}
+ 
+
+.blog-post {
+    background-color: rgba(0, 0, 0, 0.45);
+    padding: 2rem;
+    border-radius: 12px;
+    margin: 2rem auto 1rem auto;
+    max-width: 900px;
+}
+
+.blog-post h2 {
+    font-size: 3.2rem;
+    color: var(--primaryColor);
+    margin-bottom: 0.5rem;
+}
+
+.blog-post p {
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    color: var(--textColor);
+}
+
+.blog-post em {
+    color: var(--secondaryColor);
+    font-size: 1.1rem;
+}
+
+#blog p {
+    font-size: 1.5rem;
+    color: var(--textColor);
+    margin-bottom: 1rem;
+
+}
+
+#blog a {
+    color: var(--primaryColor);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    border: solid 1px var(--primaryColor);
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+#blog a:hover {
+    text-decoration: underline;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+
+    main {
+        width: 90%;
+        padding: 1rem;
+    }
+
+    .heading1 {
+        font-size: 4rem;
+    }
+
+    header p {
+        font-size: 1.5rem;
+    }
+
+    .profile-image {
+        width: 150px;
+    }
+
+    .card-main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .card-main img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .card-text h3 {
+        font-size: 1.5rem;
+    }
+
+    .card-text p {
+        font-size: 1rem;
+    }
+
+    nav ul {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+        margin-right: 1rem;
+    }
+
+    section {
+        padding: 0.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    #artworks-body {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 1rem;
+        margin-top: 2rem;
+    }
+
+    .post {
+        padding: 1.3rem;
+        transform: rotate(0deg);
+    }
+
+    .post h2 {
+        font-size: 2.2rem;
+    }
+
+    .post p {
+        font-size: 1.1rem;
+    }
+}
+
+.rolling-shape {
+    width: 10px;
+    height: 10px;
+    background-color: #ff5722;
+    border-radius: 1%; /* Makes it a circle */
+    animation: rotate 4s linear infinite;
+    animation-direction: normal;
+    position: fixed;
+    top: 90%;
+    z-index: 1000;
+}
+
+  /* Keyframes for rolling */
+@keyframes rotate {
+    0%   {right:10px;
+        transform:rotate(0deg);
+        background-color: #ff5722;}
+    50%  {right:10px;
+        transform:rotate(180deg);
+        background-color: #00eeff;}
+    100% {right:10px; 
+        transform:rotate(360deg);
+        background-color: #ff5722;}
+}
