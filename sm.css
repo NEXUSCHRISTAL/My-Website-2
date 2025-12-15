@@ -180,6 +180,7 @@ h2 {
     font-size: 1rem;
     transition: background-color 0.3s ease;
     margin-left: auto;
+    margin-top: 0.5rem;
 }
 
 .card-links button:hover {
@@ -196,6 +197,8 @@ h2 {
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #contact a:hover {
@@ -415,6 +418,24 @@ abbr {
     text-decoration: underline;
 }
 
+.blog-images{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.blog-images img {
+    height: auto;
+    border-radius: 10px;
+    border: solid 2px var(--secondaryColor);
+}
+
+.blog-images img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    z-index: 10;
+}
 
 /* Responsive Design */
 
